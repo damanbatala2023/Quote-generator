@@ -36,3 +36,26 @@ h1 {
   text-transform: uppercase;
   text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1);
 }
+
+.quote-box {
+    padding: 30px;
+    border: none;
+    border-radius: 10px;
+    background-color: #f5f7fa;
+    font-size: 22px;
+    font-style: italic;
+    line-height: 1.8;
+    margin-bottom: 30px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    position: relative;
+    transition: background-color 0.3s ease;
+  }
+  .quote-box::before {
+    content: "“";
+    font-size: 80px;
+    position: absolute;
+    top: -40px;
+    left: 20px;
+    color: rgba(0, 0, 0, 0.1);
+  }
+  
