@@ -83,3 +83,20 @@ button:active,
 select:active {
   transform: translateY(0);
 }
+
+#increase-font,
+#decrease-font {
+  background-color: #28a745;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+#increase-font:hover,
+#decrease-font:hover {
+  background-color: #218838;
+  transform: translateY(-3px);
+}
+
+#increase-font:active,
+#decrease-font:active {
+  transform: translateY(0);
+}
