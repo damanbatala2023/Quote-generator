@@ -89,3 +89,7 @@ decreaseFontButton.addEventListener('click', () => {
         quoteBox.style.fontSize = `${currentSize - 2}px`;
     }
 });
+
+darkModeSwitch.addEventListener('change', () => {
+    body.classList.toggle('dark-mode');
+});
