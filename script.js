@@ -31,3 +31,13 @@ const quotes = {
 
 let currentCategory = 'science';
 let currentIndex = 0;
+
+const quoteBox = document.getElementById('quote-box');
+const categorySelect = document.getElementById('category');
+const prevButton = document.getElementById('prev-quote');
+const nextButton = document.getElementById('next-quote');
+const randomButton = document.getElementById('random-quote');
+const darkModeSwitch = document.getElementById('dark-mode-switch');
+const body = document.body;
+const increaseFontButton = document.getElementById('increase-font');
+const decreaseFontButton = document.getElementById('decrease-font');
