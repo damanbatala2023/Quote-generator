@@ -41,3 +41,13 @@ const darkModeSwitch = document.getElementById('dark-mode-switch');
 const body = document.body;
 const increaseFontButton = document.getElementById('increase-font');
 const decreaseFontButton = document.getElementById('decrease-font');
+
+function populateCategories() {
+    for (const category in quotes) {
+        const option = document.createElement('option');
+        option.value = category;
+        option.textContent = category.charAt(0).toUpperCase() + category.slice(1);
+        categorySelect.appendChild(option);
+    }
+}
+populateCategories();
