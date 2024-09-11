@@ -61,3 +61,19 @@ categorySelect.addEventListener('change', () => {
 function displayQuote() {
     quoteBox.textContent = quotes[currentCategory][currentIndex];
 }
+
+nextButton.addEventListener('click', () => {
+    currentIndex = (currentIndex + 1) % quotes[currentCategory].length;
+    displayQuote();
+});
+
+prevButton.addEventListener('click', () => {
+    currentIndex = (currentIndex - 1 + quotes[currentCategory].length) % quotes[currentCategory].length;
+    displayQuote();
+});
+
+// Show random quote
+randomButton.addEventListener('click', () => {
+    currentIndex = Math.floor(Math.random() * quotes[currentCategory].length);
+    displayQuote();
+});
