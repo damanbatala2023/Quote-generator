@@ -77,3 +77,15 @@ randomButton.addEventListener('click', () => {
     currentIndex = Math.floor(Math.random() * quotes[currentCategory].length);
     displayQuote();
 });
+
+increaseFontButton.addEventListener('click', () => {
+    const currentSize = parseInt(window.getComputedStyle(quoteBox).fontSize);
+    quoteBox.style.fontSize = `${currentSize + 2}px`;
+});
+
+decreaseFontButton.addEventListener('click', () => {
+    const currentSize = parseInt(window.getComputedStyle(quoteBox).fontSize);
+    if (currentSize > 12) {
+        quoteBox.style.fontSize = `${currentSize - 2}px`;
+    }
+});
