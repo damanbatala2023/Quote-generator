@@ -1,0 +1,33 @@
+const quotes = {
+    science: [
+        "Science is a way of thinking much more than it is a body of knowledge. – Carl Sagan",
+        "The important thing is not to stop questioning. Curiosity has its own reason for existence. – Albert Einstein",
+        "Equipped with his five senses, man explores the universe around him and calls the adventure Science. – Edwin Hubble",
+        "Somewhere, something incredible is waiting to be known. – Carl Sagan",
+        "The good thing about science is that it’s true whether or not you believe in it. – Neil deGrasse Tyson"
+    ],
+    philosophy: [
+        "The unexamined life is not worth living. – Socrates",
+        "To be is to be perceived. – George Berkeley",
+        "The only true wisdom is in knowing you know nothing. – Socrates",
+        "He who thinks great thoughts, often makes great errors. – Martin Heidegger",
+        "You can discover more about a person in an hour of play than in a year of conversation. – Plato"
+    ],
+    literature: [
+        "Not all those who wander are lost. – J.R.R. Tolkien",
+        "There is no greater agony than bearing an untold story inside you. – Maya Angelou",
+        "It is our choices that show what we truly are, far more than our abilities. – J.K. Rowling",
+        "We are all in the gutter, but some of us are looking at the stars. – Oscar Wilde",
+        "A room without books is like a body without a soul. – Marcus Tullius Cicero"
+    ],
+    motivation: [
+        "The best way to get started is to quit talking and begin doing. – Walt Disney",
+        "Don’t let yesterday take up too much of today. – Will Rogers",
+        "You learn more from failure than from success. Don’t let it stop you. Failure builds character. – Unknown",
+        "It’s not whether you get knocked down, it’s whether you get up. – Vince Lombardi",
+        "We generate fears while we sit. We overcome them by action. – Dr. Henry Link"
+    ]
+};
+
+let currentCategory = 'science';
+let currentIndex = 0;
