@@ -51,3 +51,9 @@ function populateCategories() {
     }
 }
 populateCategories();
+
+categorySelect.addEventListener('change', () => {
+    currentCategory = categorySelect.value;
+    currentIndex = 0;
+    displayQuote();
+});
