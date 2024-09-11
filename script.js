@@ -57,3 +57,7 @@ categorySelect.addEventListener('change', () => {
     currentIndex = 0;
     displayQuote();
 });
+
+function displayQuote() {
+    quoteBox.textContent = quotes[currentCategory][currentIndex];
+}
